@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Texanito - Donde se come bonito</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header y Navegación -->
+    <header>
+        <nav class="nav-container">
+            <a href="#" class="logo">EL TEXANITO</a>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <!-- <li><a href="#sucursales">Sucursales</a></li> -->
+                <li><a href="#contacto">Contacto</a></li>
+                <button id="dark-mode-toggle" class="dark-toggle">🌙</button>
+            </ul>
+            
+            <div class="hamburger" id="hamburger">
+                ☰
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>DONDE SE COME BONITO</h1>
+            <p>Auténtica comida norteña en Monterrey</p>
+            <button class="cta-button" onclick="scrollToMenu()">VER MENÚ</button>
+        </div>
+    </section>
+
+    <!-- Sección Menú -->
+    <section class="menu-section" id="menu">
+        <h2 class="section-title">NUESTRO MENÚ</h2>
+        
+        <div class="categories">
+            <button class="category-btn active" onclick="filterMenu('todos')">Todos</button>
+            <button class="category-btn" onclick="filterMenu('tacos')">Tacos</button>
+            <button class="category-btn" onclick="filterMenu('parrilladas')">Parrilladas</button>
+            <button class="category-btn" onclick="filterMenu('hamburguesas')">Hamburguesas</button>
+            <button class="category-btn" onclick="filterMenu('combos')">Combos</button>
+        </div>
+
+        <div class="menu-grid" id="menu-grid">
+            <!-- Los platillos se van a generar en el script -->
+        </div>
+    </section>
+
+    <!-- Sección Delivery -->
+    <section class="delivery-section">
+        <h2 class="section-title">PIDE A DOMICILIO</h2>
+        <p>Ordena a través de tu app favorita</p>
+        
+        <div class="delivery-apps">
+            <a href="#" class="app-btn" onclick="redirectToApp('rappi')">
+                <img src="images/delibery/rappi3.png" alt="Rappi Logo" class="app-icon">
+            </a>
+            <a href="#" class="app-btn" onclick="redirectToApp('didi')">
+                <img src="images/delibery/didi-logo-3.png" alt="DiDi Food Logo" class="app-icon">
+            </a>
+            <a href="#" class="app-btn" onclick="redirectToApp('uber')">
+                <img src="images/delibery/Uber Eats3.png" alt="Uber Eats Logo" class="app-icon">
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="footer-content">
+            <div>
+                <h3>EL TEXANITO</h3>
+                <p>Donde se come bonito desde 1995</p>
+            </div>
+            
+            <div>
+                <h3>CONTACTO</h3>
+                <p>📍 Monterrey, N.L.</p>
+                <p>📞 (81) 1234-5678</p>
+                <p>✉️ info@eltexanito.com</p>
+            </div>
+            
+            <div>
+                <h3>SÍGUENOS</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link" onclick="redirectToSocial('facebook')">
+                        <img src="images/apps/facebook2.png" alt="Facebook Icon" class="social-icon">
+                    </a>
+                    <a href="#" class="social-link" onclick="redirectToSocial('instagram')">
+                        <img src="images/apps/instagram2.png" alt="Instagram Icon" class="social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
