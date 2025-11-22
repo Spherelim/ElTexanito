@@ -54,7 +54,7 @@
 
 @font-face {
     font-family: 'Bronco Personal Use';
-    src: url('https://fonts.cdnfonts.com/css/bronco') format('woff2');
+    src: url(/ElTexanito/font/BroncoPersonalUse.ttf) format('woff2');
     font-weight: normal;
     font-style: normal;
 }
